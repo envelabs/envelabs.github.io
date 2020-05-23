@@ -1,2 +1,2 @@
-# enve labs 
-documentación de distitas tecnologías 
+# enve labs
+documentación de distintas tecnologías
