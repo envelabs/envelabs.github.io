@@ -14,7 +14,7 @@ apt-get install -y python --allow-unauthenticated
 apt-get install -y ansible --allow-unauthenticated
 ```
 
-# Commands exec
+#### Commands exec
 
 check connectiviy
 
@@ -34,7 +34,7 @@ exec roles
 ansible-playbook -i inventory --private-key=~/.ssh/id_rsa play.yml -e "host=<target-host>"
 ```
 
-# Handlers
+#### Handlers
 
 If a task notifies a handler, then a subsequent task in the same play fails, then the whole playbook run will terminate and the handler will not be called. The workaround is to force the handler exec
 
@@ -46,13 +46,13 @@ If a task notifies a handler, then a subsequent task in the same play fails, the
 ...
 ```
 
-# Ansible execution against AWS
+#### Ansible execution against AWS
 
 ```
 AWS_PROFILE=th ansible-playbook -i ec2.py  play.ec2.yml -e "host=<host_var>"
 ```
 
-# Ansible Vault
+#### Ansible Vault
 
 Encrypt
 
@@ -87,7 +87,7 @@ Varfile format for <file_to_encrypt>.yml
   MH4ySw0qqXbqZcZAjZeWIV/UrtXQRlISpdqbqwIDAQABAoIBAG5epFMBRHuO62dV
 ```
 
-# Ansible provisioning using user_data
+#### Ansible provisioning using user_data
 
 ```
 ...
